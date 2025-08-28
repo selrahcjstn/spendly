@@ -64,3 +64,22 @@ export const login = async (req, res) => {
         res.status(500).json({message: error.message});
     }
 }
+
+export const updateUserInfo = async (req, res) => {
+    const id = req.params.id;
+    const update = req.body;
+
+    const result = await userModel.findByIdAndUpdate(id, update, { new: true, runValidators: true  });
+    if(!result){
+        return res.status(404).json({
+            success: false,
+            message: "User not found"
+        })
+    }
+
+    res.status(201).json({
+        success: true,
+        message: "Successfully updated!",
+        data: result
+    })
+}
