@@ -106,3 +106,27 @@ export const removeExepensesByID = async (req, res) => {
         })
     }
 }
+
+export const multiDeleteExpenses = async (req, res) => {
+    try {
+        const { expenseID } = req.body; 
+
+        const result = await Expenses.deleteMany({ _id: { $in: expenseID } });
+
+        if (result.deletedCount === 0) {
+            return res.status(404).json({
+                success: false,
+                message: "No Expenses found for the given IDs",
+                deleteCount: 0
+            });
+        }
+
+        res.status(200).json({ 
+            success: true,
+            message: "Delete Successful!",
+            deleteCount: result.deletedCount
+        });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
