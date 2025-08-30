@@ -1,9 +1,9 @@
-import Header from "../features/landing_page/Header";
-import Hero from "../features/landing_page/Hero";
+import Header from "../features/LandingPage/Header";
+import Hero from "../features/LandingPage/Hero";
 function LandingPage() {
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full bg-white/20 backdrop-blur-md border-b border-white/30 z-50">
+      <nav className="fixed top-0 left-0 w-full bg-white/0 backdrop-blur-md  z-50">
         <Header />
       </nav>
       <main className="mt-20">

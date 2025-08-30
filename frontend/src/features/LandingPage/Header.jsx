@@ -1,4 +1,4 @@
-import Button from "../../components/buttons/Button";
+import Button from "../../components/Buttons/Button";
 
 function Header() {
   const headerLinks = ["Home", "Features", "Pricing", "About", "Contact"];

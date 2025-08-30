@@ -1,6 +1,8 @@
-import SectinLayout from "../../components/layout/SectionLayout";
-import Tag from "../../components/layout/Tag";
-import Button from "../../components/buttons/Button";
+import SectinLayout from "../../components/LandingPageLayout/SectionLayout";
+import Tag from "../../components/LandingPageLayout/Tag";
+import Button from "../../components/Buttons/Button";
+import ContainerLayout from "../../components/LandingPageLayout/ContainerLayout";
+import HeroInfo from "./HeroInfo";
 
 function Hero() {
   return (
@@ -19,8 +21,11 @@ function Hero() {
       </div>
       <div className="space-x-6 mt-2">
         <Button text={"Start Tracking Today"} variant={"primary"} />
-        <Button text={"Start Tracking Today"} variant={"secondary"} />
+        <Button text={"Discover Features"} variant={"secondary"} />
       </div>
+      <ContainerLayout>
+        <HeroInfo />
+      </ContainerLayout>
     </SectinLayout>
   );
 }

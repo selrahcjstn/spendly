@@ -24,7 +24,7 @@
   --dark-btn-text: #EAF3EF;
   --dark-icon: #4ADE80;
 
-  --border-color: #D1D5DB;
+  --border-color: #cacdd3;
 }
 
   /* Buttons */
@@ -38,7 +38,7 @@
 }
 
 .secondary-button{
-    background-color: var(--light-secondary-btn-bg);
+    background-color: transparent;
     color: var(--light-secondary-btn-text); 
     border: 1px solid var(--border-color);
 }
@@ -54,6 +54,10 @@
 
 .light-p{
 color: var(--light-paragraph);
+} 
+
+.light-p-subtitle{
+color: var(--light-subtitle);
 }
 
 .hero-size-p{
@@ -63,3 +67,19 @@ color: var(--light-paragraph);
 p{
   font-size: 1rem
 }
+
+.light-h2{
+  color: var(--light-h2);
+  font-size: 1.875rem;
+}
+
+.light-h3{
+  color: var(--light-h2);
+  font-size: 1.2rem;
+}
+
+.light-h4{
+  color: var(--light-h2);
+  font-size: 1rem;
+}
+
