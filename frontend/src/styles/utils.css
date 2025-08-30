@@ -1,0 +1,65 @@
+:root {
+  /*  Light Section  */
+  --light-bg: #FFFFFF;
+  --light-h1: #3D6957;
+  --light-h2: #3D6957;
+  --light-subtitle: #577870;
+  --light-paragraph: #263D3C;
+  --light-primary-btn-bg: #3D6957;
+  --light-primary-btn-text: #EAF3EF;
+  --light-primary-btn-hover: #477D64;
+  --light-secondary-btn-bg: #ffffff;
+  --light-secondary-btn-text: #3D6957;
+  --light-secondary-btn-hover: #f1f2f5; 
+  --light-card-bg: #EAF3EF;
+  --light-icon: #3D6957;
+
+  /* Dark Section */
+  --dark-section-bg: #263D3C;
+  --dark-card-bg: #1E2A25;
+  --dark-h1: #EAF3EF;
+  --dark-h2: #B8CCC4;
+  --dark-paragraph: #B8CCC4;
+  --dark-primary-btn-bg: #3D6957;
+  --dark-btn-text: #EAF3EF;
+  --dark-icon: #4ADE80;
+
+  --border-color: #D1D5DB;
+}
+
+  /* Buttons */
+.primary-button{
+    background-color: var(--light-primary-btn-bg);
+    color: var(--light-primary-btn-text); 
+}
+
+.primary-button:hover{
+    background-color: var(--light-primary-btn-hover);
+}
+
+.secondary-button{
+    background-color: var(--light-secondary-btn-bg);
+    color: var(--light-secondary-btn-text); 
+    border: 1px solid var(--border-color);
+}
+
+.secondary-button:hover{
+    background-color: var(--light-secondary-btn-hover);
+}
+
+  /* Light texts */
+.light-h1{
+  color: var(--light-h1);
+}
+
+.light-p{
+color: var(--light-paragraph);
+}
+
+.hero-size-p{
+  font-size: 1.125rem
+}
+
+p{
+  font-size: 1rem
+}
