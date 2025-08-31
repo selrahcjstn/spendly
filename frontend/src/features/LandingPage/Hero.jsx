@@ -8,8 +8,8 @@ function Hero() {
   return (
     <SectinLayout color={"#F0F0F0"}>
       <Tag text={"SMART EXPENSES TRACKING"} variant={"secondary"} />
-      <div className="leading-tight text-center flex flex-col items-center gap-6 max-w-4xl">
-        <h1 className="light-h1 text-5xl font-semibold ">
+      <div className=" text-center flex flex-col items-center gap-6 max-w-4xl">
+        <h1 className="light-h1 leading-tight text-5xl font-semibold ">
           Take Full Control of Your Expenses and Make Smarter Financial
           Decisions Every Day
         </h1>

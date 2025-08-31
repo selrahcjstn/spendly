@@ -5,7 +5,7 @@ function Header() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto flex items-center justify-between  py-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-4">
         <div className="flex items-center gap-16">
           <h3 className="text-[24px] text-[#3D6957] font-semibold">Spendify</h3>
           <div>

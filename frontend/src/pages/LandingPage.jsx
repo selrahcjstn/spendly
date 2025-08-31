@@ -1,5 +1,7 @@
 import Header from "../features/LandingPage/Header";
 import Hero from "../features/LandingPage/Hero";
+import Features from "../features/LandingPage/Features";
+
 function LandingPage() {
   return (
     <>
@@ -8,6 +10,7 @@ function LandingPage() {
       </nav>
       <main className="mt-20">
         <Hero />
+        <Features />
       </main>
     </>
   );
