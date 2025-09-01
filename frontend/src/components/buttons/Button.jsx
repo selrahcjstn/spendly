@@ -1,6 +1,6 @@
-function Button({ text, variant, onClick }) {
+function Button({ text, variant, onClick, className }) {
   const baseClasses =
-    "rounded-lg px-5 py-2 font-medium text-base cursor-pointer transition-transform duration-300 ease-in-out hover:scale-103";
+    "rounded-lg px-6 py-3 font-medium text-base cursor-pointer transition-transform duration-300 ease-in-out hover:scale-103 whitespace-nowrap";
 
   const variantClasses = {
     primary: "primary-button",
@@ -10,7 +10,7 @@ function Button({ text, variant, onClick }) {
 
   return (
     <button
-      className={`${baseClasses} ${variantClasses[variant]}`}
+      className={`${baseClasses} ${variantClasses[variant]} ${className}`}
       onClick={onClick}
     >
       {text}

@@ -19,7 +19,7 @@ function Hero() {
           decisions.
         </p>
       </div>
-      <div className="space-x-6 mt-2">
+      <div className="space-x-6 mb-20 mt-2">
         <Button text={"Start Tracking Today"} variant={"primary"} />
         <Button text={"Discover Features"} variant={"secondary"} />
       </div>

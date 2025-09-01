@@ -1,4 +1,4 @@
-import FeatrureCard from "../../components/LandingPageLayout/FeatrureCard";
+import FeatureCard from "../../components/LandingPageLayout/FeatureCard";
 import {
   FiEdit3,
   FiPieChart,
@@ -48,11 +48,12 @@ function FeatureItems() {
   return (
     <div className="flex flex-wrap gap-6 justify-center mt-10">
       {features.map((item, index) => (
-        <FeatrureCard
+        <FeatureCard
           key={index}
           icon={item.icon}
           title={item.title}
           description={item.description}
+          button={true}
         />
       ))}
     </div>

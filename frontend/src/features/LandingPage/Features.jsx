@@ -4,7 +4,7 @@ import FeatureItems from "./FeatureItems";
 
 function Features() {
   return (
-    <SectinLayout>
+    <SectinLayout color={"white"}>
       <div className="flex flex-col items-center justify-center gap-6 text-center ">
         <Tag text={"FEATURES"} variant={"secondary"} />
         <h2 className="max-w-4xl text-center font-semibold">

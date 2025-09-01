@@ -70,3 +70,17 @@ p {
 .hero-size-p {
   font-size: 1.125rem;
 }
+
+
+/* DARK */
+.dark-h2{
+  color: #FFFFFF;
+}
+
+.dark-p{
+  color: var(--primary-btn-text);
+}
+
+.first-letter-uppercase::first-letter {
+  text-transform: uppercase;
+}

@@ -1,5 +1,6 @@
 function Tag({ text, variant }) {
-  const baseClasses = "rounded-full px-4 py-2 capitalize font-semibold text-xs";
+  const baseClasses =
+    "rounded-full  px-4 py-2 capitalize font-semibold text-xs";
 
   const variantClasses = {
     primary: "bg-[#3D6957] text-[#EAF3EF]",
@@ -7,7 +8,9 @@ function Tag({ text, variant }) {
   };
 
   return (
-    <div className={`${baseClasses} ${variantClasses[variant]}`}>{text}</div>
+    <div className="flex justify-center">
+      <div className={`${baseClasses} ${variantClasses[variant]}`}>{text}</div>
+    </div>
   );
 }
 
