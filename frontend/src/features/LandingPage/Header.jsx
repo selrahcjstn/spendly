@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import Button from "../../components/Buttons/Button";
-
+import icon from "../../assets/icons/icon.png";
 function Header() {
   const headerLinks = ["Home", "Features", "Pricing", "About", "Contact"];
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +24,12 @@ function Header() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
         <div className="flex items-center gap-16">
-          <h3 className="text-[24px] text-[#3D6957] font-semibold">Spendify</h3>
+          <div className="flex items-center justify-center">
+            <img src={icon} alt="logo" className="w-12 h-12" />
+
+            <h2 className="text-[30px] text-[#3D6957] font-bold">Spendify</h2>
+          </div>
+
           <ul className="flex items-end gap-5 text-[14px] text-[#3D6957] font-semibold">
             {headerLinks.map((link, index) => (
               <li
