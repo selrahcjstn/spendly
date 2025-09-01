@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import connectDB from './src/config/db.js';
 import authRouter from './src/routes/authRoutes.js';
 import expensesRoute from './src/routes/expensesRoutes.js';
+import cors from "cors";
 
 import cookieParser from "cookie-parser";
 
@@ -16,7 +17,7 @@ await connectDB();
 //middleware
 app.use(express.json());
 app.use(cookieParser());
-
+app.use(cors());
 //routes
 app.use("/api/auth", authRouter);
 

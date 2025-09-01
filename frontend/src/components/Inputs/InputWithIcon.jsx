@@ -1,6 +1,13 @@
 import { MdOutlineEmail } from "react-icons/md";
 
-function InputWithIcon({ type, placeholder, isRequired }) {
+function InputWithIcon({
+  type,
+  placeholder,
+  isRequired,
+  onChange,
+  value,
+  className,
+}) {
   return (
     <div className="flex flex-col">
       <label
@@ -18,9 +25,11 @@ function InputWithIcon({ type, placeholder, isRequired }) {
         <input
           type={type}
           name={type}
+          value={value}
           placeholder={placeholder}
           required={isRequired}
           className="w-full font-medium py-3 px-2 outline-none text-[#282828] placeholder:text-[#9e9e9e]"
+          onChange={onChange}
         />
       </div>
     </div>
